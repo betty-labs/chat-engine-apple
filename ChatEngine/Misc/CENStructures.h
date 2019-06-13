@@ -122,49 +122,49 @@ typedef struct CENEventDataKeys {
      *
      * @ref d1521c25-0b4d-4466-a532-7d1dde39576c
      */
-    __unsafe_unretained NSString *data;
+    __unsafe_unretained NSString * _Nullable data;
     
     /**
      * @brief \b {User CENUser} which represent event sender.
      *
      * @ref 7940dbc5-e18a-40b6-8bcc-8873da7947fb
      */
-    __unsafe_unretained NSString *sender;
+    __unsafe_unretained NSString * _Nullable sender;
     
     /**
      * @brief \b {Chat CENChat} on which \c event has been received.
      *
      * @ref 5db9cfe5-cb55-4705-aec3-12f33cd70220
      */
-    __unsafe_unretained NSString *chat;
+    __unsafe_unretained NSString * _Nullable chat;
     
     /**
      * @brief Name of emitted event.
      *
      * @ref 1d3a46fd-14e3-444f-9128-6dc084fe0601
      */
-    __unsafe_unretained NSString *event;
+    __unsafe_unretained NSString * _Nullable event;
     
     /**
      * @brief Unique event identifier.
      *
      * @ref 2ae9f748-a865-468e-b125-5035d390ff22
      */
-    __unsafe_unretained NSString *eventID;
+    __unsafe_unretained NSString * _Nullable eventID;
     
     /**
      * @brief Timetoken representing date when event has been emitted.
      *
      * @ref 4140970e-0e86-4320-824d-37fd945b1288
      */
-    __unsafe_unretained NSString *timetoken;
+    __unsafe_unretained NSString * _Nullable timetoken;
     
     /**
      * @brief Version of \b {CENChatEngine} SDK which emitted this \c event.
      *
      * @ref b2e97146-63dd-4654-a867-58dd88dfb38c
      */
-    __unsafe_unretained NSString *sdk;
+    __unsafe_unretained NSString * _Nullable sdk;
 } CENEventDataKeys;
 
 extern CENEventDataKeys CENEventData;
